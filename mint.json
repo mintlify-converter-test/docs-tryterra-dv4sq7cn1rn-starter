@@ -1,91 +1,150 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "docs-tryterra",
   "logo": {
-    "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
+    "dark": "/logo/docs-tryterra_logo.png",
+    "light": "/logo/docs-tryterra_logo_inverted.png"
   },
   "favicon": "/favicon.svg",
   "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
+    "primary": "",
+    "light": "#000000",
+    "dark": "",
     "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
+      "from": "",
+      "to": "#000000"
     }
   },
   "topbarLinks": [
     {
-      "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "name": "Ask a Question",
+      "url": "https://tryterra.co/ask-a-question"
     }
   ],
   "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "name": "Get started",
+    "url": "https://dashboard.tryterra.co/user/signup"
+  },
+  "primaryTab": {
+    "name": "Home"
   },
   "tabs": [
     {
+      "name": "Guides",
+      "url": "guides"
+    },
+    {
+      "name": "Recipes",
+      "url": "recipes"
+    },
+    {
       "name": "API Reference",
       "url": "api-reference"
+    },
+    {
+      "name": "Changelog",
+      "url": "changelog"
+    },
+    {
+      "name": "Blog",
+      "url": "blog"
+    },
+    {
+      "name": "Status Page",
+      "url": "status-page"
+    },
+    {
+      "name": "Dashboard",
+      "url": "dashboard"
+    },
+    {
+      "name": "Log In",
+      "url": "log-in"
     }
   ],
   "anchors": [
     {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
-    },
-    {
       "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
+      "icon": "users",
+      "url": "https://tryterra.co/community"
     },
     {
       "name": "Blog",
       "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "url": "https://tryterra.co/blog"
     }
   ],
+  "modeToggle": {
+    "default": "dark"
+  },
   "navigation": [
     {
       "group": "Get Started",
       "pages": [
-        "introduction",
-        "quickstart",
-        "development"
+        "get-started/quickstart-1",
+        "get-started/getting-started"
       ]
     },
     {
-      "group": "Essentials",
+      "group": "Team Management",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
+        "team-management/add-your-team-members-1",
+        "team-management/usage-statistics-1"
       ]
     },
     {
-      "group": "API Documentation",
+      "group": "Debugging",
       "pages": [
-        "api-reference/introduction"
+        "debugging/self-debugging",
+        "debugging/using-the-chatbot"
       ]
     },
     {
-      "group": "Endpoint Examples",
+      "group": "Websockets",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "websockets/using-the-websocket-api",
+        "websockets/setup-websocket-server"
+      ]
+    },
+    {
+      "group": "SDKs",
+      "pages": [
+        "sdks/stream-heart-rate-ios-sdk",
+        "sdks/stream-heart-rate-android-sdk",
+        "sdks/wearos-sdk"
+      ]
+    },
+    {
+      "group": "Historical Data",
+      "pages": [
+        "historical-data/historical-data",
+        "historical-data/receiving-webhooks",
+        "historical-data/event-types",
+        "historical-data/data-models"
+      ]
+    },
+    {
+      "group": "Unified API",
+      "pages": [
+        "unified-api/unified-api-manage-integrations-ios",
+        "unified-api/unified-api-manage-integrations-android",
+        "unified-api/react-native-project",
+        "unified-api/unified-api-manage-integrations-flutter"
+      ]
+    },
+    {
+      "group": "Building UI",
+      "pages": [
+        "building-ui/building-your-own-ui",
+        "building-ui/authenticate-widget",
+        "building-ui/widget-customisation",
+        "building-ui/integration-fun-facts"
       ]
     }
   ],
   "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "linkedin": "https://www.linkedin.com/company/terraapi",
+    "twitter": "https://twitter.com/TerraAPI",
+    "github": "https://github.com/tryterra"
   }
 }
